@@ -1,0 +1,39 @@
+trace com.dominos.cloud.im.controller.StoreController queryStoreGroupAll
+
+
+trace com.dominos.cloud.im.dao.StoreGroupsMapper selectByExampleWithBLOBs
+
+trace com.dominos.cloud.pe.controller.PeRuleController matchingRule 
+
+
+trace com.dominos.cloud.pe.controller.PeRuleController matchingRule
+
+
+trace com.dominos.cloud.pe.service.impl.RuleUtilService matchingRule
+
+
+trace com.dominos.cloud.pe.service.impl.RuleUtilService executeRuleExpress
+
+
+trace -j com.dominos.cloud.pe.service.impl.RuleUtilService executeRuleExpress   params.length==3
+
+
+trace com.dominos.cloud.pe.service.impl.RuleUtilService executeRuleExpress '#cost > 30'
+
+
+
+trace com.dominos.cloud.pe.service.impl.RuleUtilService executeRuleExpress
+
+
+reset com.dominos.cloud.pe.service.impl.RuleUtilService
+
+
+
+
+./quick_start.sh -p 1  -i localhost start
+
+
+./quick_start.sh -p 1  start
+
+
+./quick_start.sh stop
