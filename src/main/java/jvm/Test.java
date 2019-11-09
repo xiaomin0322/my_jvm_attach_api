@@ -5,6 +5,11 @@ import java.util.List;
 import com.sun.tools.attach.VirtualMachine;
 import com.sun.tools.attach.VirtualMachineDescriptor;
 
+/**
+ * windows 执行 权限问题可能会导致只输出当前进程得id
+ * @author Zengmin.Zhang
+ *
+ */
 public class Test {
 
 	public static void main(String[] args) throws Exception {

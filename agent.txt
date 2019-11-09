@@ -37,3 +37,9 @@ reset com.dominos.cloud.pe.service.impl.RuleUtilService
 
 
 ./quick_start.sh stop
+
+
+
+java -Djava.ext.dirs=/root/lib -jar attachTest.jar
+
+
